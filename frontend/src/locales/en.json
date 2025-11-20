@@ -1,0 +1,18 @@
+{
+  "homeTitle": "Welcome to Janseva Portal",
+  "homeSubtitle": "Empowering citizens to report issues directly to authorities for faster, transparent, and trackable resolutions.",
+  "registerComplaint": "REGISTER COMPLAINT",
+  "viewIssuesStatus": "View Issues Status",
+  "communityTitle": "Community Engagement",
+  "communityText": "Community engagement is the art of creating partnership between citizens and governance.",
+  "aimTitle": "Our Aim & Community Benefits",
+  "aimText": "The Janseva Portal bridges the gap between citizens and authorities. Our mission is to empower communities and ensure accountability in governance through a transparent and accessible platform.",
+  "benefits": [
+    "Empower citizens to raise their voice without barriers.",
+    "Ensure accountability with visible and trackable complaints.",
+    "Speed up resolutions through direct digital reporting.",
+    "Promote inclusivity with accessible design.",
+    "Build trust between communities and local governance.",
+    "Create cleaner, safer, and more efficient neighborhoods."
+  ]
+}

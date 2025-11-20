@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Define theme colors for consistent design */
+@layer base {
+  :root {
+    --color-background: #F5F7FA; /* Softer light grey-blue background */
+    --color-surface: #FFFFFF;
+    --color-text: #1E293B; /* Deep neutral blue-grey */
+    --color-primary: #00539C; /* Deep blue (Gov-style) */
+    --color-accent: #FF7A00; /* Orange accent */
+    --color-link: #0066CC;
+    --color-success: #0B6623;
+    --color-danger: #B22222;
+  }
+}
+
+/* ✅ Base layout for all pages */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Poppins', 'Roboto', 'Open Sans', sans-serif;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ✅ Navbar styling (top menu) */
+nav {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Proper spacing between items */
+  padding: 1rem 0;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--color-accent);
+}
+
+/* ✅ Center main content for all pages (login, report, etc.) */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers vertically */
+  align-items: center; /* centers horizontally */
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ✅ Heading */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+/* ✅ Paragraph text */
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+}
+
+/* ✅ Button styling */
+button {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--color-accent);
+  color: white;
+  transition: background-color 0.3s, transform 0.1s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-primary);
+  transform: scale(1.02);
+}
+
+/* ✅ Form containers (for Login / Report Issue) */
+.form-container {
+  background-color: var(--color-surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* ✅ Input fields */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.6rem 0;
+  border: 1px solid #CBD5E1;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+/* ✅ File upload input */
+input[type="file"] {
+  padding: 0.4rem;
+}
+
+/* ✅ Footer (optional if you add later) */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #475569;
+  background-color: #E2E8F0;
+}
